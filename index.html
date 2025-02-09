@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tiny Calculator</title>
+    <!-- Styling for the client UI -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+	<form>
+        <label>First Number:</label>
+        <input type="text" id="base">
+        <label>Operation:</label>
+        <input type="text" id="operation">
+        <label>Second Number:</label>
+        <input type="text" id="exponent">
+        <!-- set button onClick method to call function we defined passing input values as parameters -->
+        <button type="button" onclick="callAPI(document.getElementById('base').value,document.getElementById('exponent').value)">CALCULATE</button>
+    </form>
+
+
+        <output id="result"></output>
+    
+</body>
+</html>
